@@ -1,0 +1,131 @@
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #5157fd;
+  }
+  
+  /* Carousel container */
+  .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 0 60px; /* space for arrows */
+  }
+  
+
+
+  .carousel-track {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-track.left {
+    transform: translateX(25%);
+  }
+  
+  .carousel-track.right {
+    transform: translateX(-25%);
+  }
+  
+  /* Reset the transform after sliding */
+  .carousel-track:not(.left):not(.right) {
+    transform: translateX(0);
+  }
+  
+
+
+  /* Carousel content */
+  .carousel-track {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  
+  /* Expert Card */
+  .expert-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    min-width: 250px;
+    max-width: 270px;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .expert-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .expert-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #eee6ff;
+    margin: auto;
+  }
+  
+  .expert-name {
+    color: #3b3f9b;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  
+  .expert-desc {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Arrows */
+  .arrow-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #3b3f9b;
+    cursor: pointer;
+    z-index: 999;
+    transition: color 0.3s;
+    position: absolute;
+    top: 40%;
+  }
+  
+  .arrow-btn:hover {
+    color: #6c63ff;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 1200px) {
+    .expert-img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .expert-card {
+      max-width: 220px;
+      padding: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-track {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .arrow-btn {
+      display: none;
+    }
+  
+    .expert-card {
+      margin-bottom: 1.5rem;
+    }
+  }
+  

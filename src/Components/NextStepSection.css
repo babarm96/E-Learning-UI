@@ -1,0 +1,62 @@
+.next-step-section .object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .next-step-title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .next-step-title {
+      font-size: 1.5rem;
+    }
+  
+    .next-step-section .btn {
+      font-size: 1rem;
+      width: 100%;
+    }
+  }
+
+
+  /* Default orange button */
+.btn-orange {
+    background-color: #ffa76d !important;
+    color: white !important;
+    border: 2px solid #ffa76d !important;
+    transition: all 0.4s ease;
+  }
+  
+  /* Wrapper for hover animation */
+  .animated-nextStep-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+  }
+  
+  /* Gray fill animation on hover */
+  .animated-nextStep-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(196, 102, 210);
+    z-index: -1;
+    transition: all 0.4s ease;
+  }
+  
+  /* On hover: gray slides in from left */
+  .animated-nextStep-btn:hover::before {
+    left: 0;
+  }
+  
+  /* On hover: update text & border color */
+  .animated-nextStep-btn:hover {
+    color: white !important;
+    border-color: rgb(210, 105, 226) !important;
+  }
+  

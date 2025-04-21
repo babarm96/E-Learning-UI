@@ -1,0 +1,22 @@
+.subject-card {
+    height: 180px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  .subject-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .subject-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .subject-card .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+  }
+  

@@ -1,0 +1,75 @@
+.hero-section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    max-width: 65%;
+  }
+  
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to bottom right, #c471f5, #fa71cd);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-circle img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .hero-heading {
+    color: #3b49a1;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .hero-description {
+    color: #3b3b3b;
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+  
+  .hero-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #3b49a1;
+    margin-bottom: 12px;
+  }
+  
+  .check-icon {
+    color: #ff9966;
+    margin-right: 12px;
+    font-size: 1rem;
+  }
+  
+  .hero-video-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+  }
+  
+  .play-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #ff9966;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .play-btn:hover {
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,39 @@
+.learning-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  margin-top: 6rem;
+}
+
+.overlay {
+
+  padding: 60px 0;
+}
+
+.feature-wrapper {
+  position: relative;
+  top: -95px; /* 🔥 This causes the overlap */
+  z-index: 10;
+}
+
+.feature-section {
+  padding-top: 40px;
+}
+
+.feature-box {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 50px;
+}
